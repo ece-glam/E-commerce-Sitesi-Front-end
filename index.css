@@ -1,0 +1,382 @@
+# E-commerce-Sitesi-Front-end
+E-commerce Alışveriş Sitesi/Front-end Projesi
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+/* Resetleme */
+
+html{
+    height: 100%;
+    overflow: scroll;
+
+}
+*{
+    box-sizing: border-box;
+}
+
+.global-notification{
+    text-align: center;
+    background-color: orange;
+    padding: 2px 0;
+    margin: auto;
+}
+
+.second-header{
+    
+    background-color: antiquewhite;
+    color: antiquewhite;
+}
+.nav, navbar-expand-lg{
+    background-color: antiquewhite;
+}
+ .navbar-accounts ul{
+    display: flex;
+    list-style: none;
+    
+ }
+
+ .navbar-accounts ul a{
+   margin-left: 30px;
+   text-decoration: none;
+   color: grey;
+   font-size: 14px;
+   font-weight: 500;
+   
+ }
+
+ .navbar-accounts li a:hover{
+    box-shadow: 2px 2px 2px 2px  rgb(136, 241, 241);
+    color: orange;
+    font-weight: 500;
+
+ }
+ 
+
+ /* Products */
+ 
+ .category{
+    text-align: center;
+    color: orange;
+ }
+ .features-items{
+    text-align: center;
+    color: orange;
+
+ }
+ .card-bir{
+    position: relative;
+ }
+
+ .card-bir img {
+    width: 100%;
+    transition: 0.4s ease-in-out all;
+    
+ }
+
+ .card-bir .img1:hover{
+    visibility: hidden;
+    opacity: 0;
+    
+ }
+
+ .card-body{
+   margin-bottom: 10px;
+   text-align: center;
+ }
+ .card-bir:hover .img2{
+    visibility: visible;
+    opacity: 1;
+}
+ .card-bir .img2{
+    /* display: flex; */
+    position: absolute;
+    left: 0;
+    top: 0;
+    visibility: hidden;
+
+
+ }
+ .card-iki{
+    position:relative;
+ }
+ .card-iki img {
+    width: 100%;
+    transition: 0.3s ease-in-out all;
+ }
+ .card-iki .img3:hover{
+    visibility: hidden;
+    opacity: 0;
+    /* width: 100%; */
+    
+ }
+ .card-iki:hover .img4{
+    display: inline-block;
+    visibility: visible;
+    opacity: 1;
+    width: 100%;
+}
+ .card-iki .img4{
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
+    visibility: hidden;
+
+ }
+ .card-uc img {
+    width: 100%;
+    transition: 0.3s ease-in-out all;
+ }
+ .card-uc{
+    position: relative;
+ }.card-uc .img5:hover{
+    visibility: hidden;
+    opacity: 0;
+    /* width: 100%; */
+    
+ }
+ .card-uc:hover .img6{
+    display: inline-block;
+    visibility: visible;
+    opacity: 1;
+    width: 100%;
+}
+ .card-uc .img6{
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
+    visibility: hidden;
+
+ }
+
+ .product-title{
+    text-align: center;
+ }
+ .product-price{
+   
+    margin-left: 100px;
+    color: orange;
+    margin: auto;
+ }
+ .product-links{
+ text-align: center;
+ margin-bottom: 13px;
+ }
+ .price-discount {
+   
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 12px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 100%;
+
+ }
+.shopping{
+    margin: auto;
+    width: 100px;
+    height: 50px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    margin-left: 80px;
+}
+.shopping i{
+    font-size: 12px;
+    text-align: center;
+}
+
+.reklam{
+   margin: auto;
+   width: 100%;
+   margin-left: 10px;
+   
+}
+ /* Accordion */
+ .accordion,
+ .accordion-ıkı
+ {
+    background-color: whitesmoke;
+    color: black;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    font-size: 17px;
+}
+.panel{
+    background-color: wheat;
+    padding: 0 11px;
+    overflow: hidden;
+    color: black;
+    display: none;
+}
+
+.Category-write{
+    background-color: whitesmoke;
+    color: black;
+    width: 100%;
+    text-align: left;
+    border: none;
+    font-size: 16px;
+}
+.accordion:after{
+    content: "+";
+    float: right;
+}
+.active:after{
+    content: "\02E3";
+}
+
+.slider{
+   
+    margin: auto;
+    width: 100%;
+    height: 100px
+}
+
+/* Slider */
+.campaigns-wrapper .campaign-item-bır{
+    background-image: url(img/banner3.png);
+    padding: 100px;
+    background-size: cover;
+    
+}
+
+.campaigns-wrapper .campaign-item-reklam{
+    background-image: url(img/banner2.png);
+    padding: 100px;
+    width: 100%;
+    background-size: cover;
+    
+}
+
+.E-shopper{
+    display: flex;
+    margin: auto;
+    margin-left: 300px;
+    margin-bottom: 20px;
+
+    
+}
+.campaigns-wrapper .campaign-item .campaign-title {
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 30px;
+  }
+
+  .container-ıkı{
+   margin: auto;
+  }
+
+  .buton{
+   border: none;
+   color: white;
+   padding: 15px 15px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   /* margin: 4px 2px; */
+   cursor: pointer;
+   border-radius: 15%;
+}
+
+.buton:hover{
+   box-shadow: 2px 2px 2px orange;
+}
+
+.submit{
+   width: 100px;
+   height: 45px;
+}
+
+/* Responsive Ayarları */
+@media screen and (max-width:1262px ){
+   .nav-item{
+       margin-inline:10px ;
+    }   
+   .navbar-brand img{
+           width: 160px;
+       }
+   .px-4{
+           padding: 0px !important;
+       }
+   
+}
+
+@media (max-width: 768px){
+.footer-middle {
+    padding-top: 50px;
+    padding-bottom: 25px;
+    text-align: center;
+    }
+}
+
+@media screen and (max-width: 1200px){
+   .my-container{
+      max-width: 992px;
+      
+   }
+   
+}
+
+
+@media screen and (max-width: 992px){
+   .my-container{
+      max-width: 768px; 
+   }
+   
+}
+@media screen and (max-width: 1200px){
+   .campaigns-wrapper{
+      background-position: center;
+      max-width: 992px;
+      width: 100%;
+      height: 100%;
+     
+      
+   }
+   
+}
+
+@media screen and (max-width:650){
+   .campaigns-wrapper{
+      width: 50%;
+      height: 50%;
+   }
+}
+@media screen and (max-width:993){
+   footer{
+      width: 100%;
+      height: 100%;
+      
+   }
+}
+@media screen and (max-width:667px) {
+   
+   .navbar-accounts{
+      margin-top: 27px;
+      padding-left: 0;
+   }
+}
+@media screen and (max-width:667px) {
+   
+   .navbar-accounts ul{
+      
+      padding-left: 0;
+   }
+}
+
+/* @media screen and (max-width:500px){
+ .product-price{
+   margin-left: 60px;
+ }
+} */
+
+ 
